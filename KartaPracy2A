@@ -1,0 +1,34 @@
+# zad 1
+import math
+
+# a, b = int(input()), int(input())
+#
+# if (a+b)%2==0:
+#     print("TAK")
+# else:
+#     print("NIE")
+
+
+
+# zad 2
+
+# a, g = int(input()), int(input())
+#
+# if (a+g)/2>math.sqrt(a*g):
+#     print("TAK")
+# else:
+#     print("NIE")
+
+
+
+# zad 3
+
+
+k = int(input())
+l = int(input())
+m = int(input())
+
+if (k==l and m!=k and m!=l) or (k!=l and m==k and m!=l) or (k!=l and m!=k and m==l):
+    print("TAK")
+else:
+    print("NIE")
