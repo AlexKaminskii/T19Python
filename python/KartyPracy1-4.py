@@ -235,3 +235,13 @@
 #     x = int(input())
 #     suma = suma - x
 # print(suma)
+
+#zad 6
+
+# n =8
+# a = 1
+# b = 2
+# print(a,b,end=" ")
+# for i in range(n-2):
+#     a, b = b, a + b
+#     print(b, end=" ")
