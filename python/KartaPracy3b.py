@@ -1,5 +1,5 @@
 # zad 1
-import math
+
 # for i in range(1,32):
 #     print(i, end=" ")
 
