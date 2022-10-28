@@ -1,48 +1,47 @@
-
 //zad 1
 
 /*
-for (int i = 0; i<32; i++)
+for (int i = 1; i<32;i++)
 {
-    Console.Write(i + " ");
+    Console.WriteLine(i);
 }
 */
 
-
-//zad 2
+// zad 2
 
 /*
 int n = int.Parse(Console.ReadLine());
-for (int i = 1; i < n + 1; i = i + 2)
+for (int i = 1; i < n+1; i = i + 2)
 {
-    Console.Write(i*i + " ");
+    Console.WriteLine(i*i + " ");
 }
 */
 
 
-//zad 3
+// zad 3
 
 /*
-for 
-    (int i = 1137; i < 10000; i = i + 379)
+for (int i = 1137;i<10000; i++)
 {
-    Console.Write(i + " ");
+    if (i % 379 == 0)
+    {
+        Console.WriteLine(i);
+    }
+    else
+    {
+
+    }
 }
 */
 
 
 //zad 4
-
 /*
-for (int i = 100; i < 1000; i++)
+for (int i = 100; i < 1000;i++)
 {
     if (i%5==0 || i%6==0 || i%11==0)
     {
-        Console.Write(i + " ");
-    }
-    else
-    {
-
+        Console.WriteLine(i);
     }
 }
 */
@@ -53,7 +52,7 @@ for (int i = 100; i < 1000; i++)
 /*
 int suma = 0;
 int n = int.Parse(Console.ReadLine());
-for (int i = 0; i < n; i++)
+for (int i = 0; i < n;i++)
 {
     int a = int.Parse(Console.ReadLine());
     suma = suma + a;
@@ -61,42 +60,54 @@ for (int i = 0; i < n; i++)
 Console.WriteLine(suma);
 */
 
-
-//zad 6
+// zad 6
 
 /*
-int suma = 0;
 int k = int.Parse(Console.ReadLine());
-for (int i = 2; i < (k * 2) + 2; i += 2)
+for (int i = 2; i < (k * 2) + 2; i = i + 2) 
 {
-    suma = i;
+    Console.WriteLine(i);
 }
-Console.WriteLine(suma);
 */
 
 
-//zad 7
-
+// zad 7
 
 /*
-int m = int.Parse(Console.ReadLine());
-suma = 0;
-for (int i = 11; i < (m * 2) + 2; i += 11)
+int l = int.Parse(Console.ReadLine());
+for (int i = 11; i < (l * 2) + 11; i = i + 2) 
 {
-    suma =+ i;
+    Console.WriteLine(i);
 }
-Console.WriteLine(suma);
-Console.WriteLine();
-
 */
 
 
-// zad 8
+// zad 8                NIE DZIAŁA
 
+/* 
+int w0 = int.Parse(Console.ReadLine());
+int l = int.Parse(Console.ReadLine());
 
+for (int i = 0; i < l; i = i + (1/2))
+{
+    for (int j = 0; j < 6; j++)
+    w0 = w0 + w0 * (0.06 *(1/12));
+}
+*/
 
 
 // zad 9
+
+/*
+int suma = 0;
+int n = int.Parse(Console.ReadLine());
+for (int i = 21; i < n * 100; i = i + 100)
+{
+    suma = suma + i;
+    
+}
+Console.WriteLine(suma);
+*/
 
 
 
