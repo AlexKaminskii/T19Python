@@ -85,14 +85,18 @@ for (int i = 11; i < (l * 2) + 11; i = i + 2)
 // zad 8                NIE DZIAŁA
 
 /* 
-int w0 = int.Parse(Console.ReadLine());
-int l = int.Parse(Console.ReadLine());
+int kwej = int.Parse(Console.ReadLine());
+int lata = int.Parse(Console.ReadLine());
+double suma = 0;
+suma = kwej;
 
-for (int i = 0; i < l; i = i + (1/2))
+for (int i = 1; i < lata * 12 ; i++)
 {
-    for (int j = 0; j < 6; j++)
-    w0 = w0 + w0 * (0.06 *(1/12));
+    double kkon = suma * 0.06 * 1 / 12;
+    suma = suma + kkon;
 }
+Console.WriteLine(suma);
+
 */
 
 
