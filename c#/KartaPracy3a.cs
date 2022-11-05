@@ -102,6 +102,33 @@ for (int i = 0; i < n; i++)
 
 
 
+// zad 5
+
+
+
+int n = int.Parse(Console.ReadLine());
+
+
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < n; j++)
+    {
+        if (j == n / 2)
+        {
+            Console.Write("*");
+        }
+        else if (i == n / 2)
+        {
+            Console.Write(" - ");
+        }
+        else
+        {
+            Console.Write("   ");
+        }
+    }
+    Console.WriteLine();
+}
+
 
 // zad 6
 
