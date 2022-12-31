@@ -116,9 +116,7 @@
 # print(suma)
 
 
-
 # zad 9
-
 
 
 # n = int(input())
@@ -130,4 +128,23 @@
 #     wynik = wynik * ((a * -2) * znak)
 #     a = (a * -2) * znak
 #     znak = znak * -1
+# print(wynik)
+
+
+# zad 10
+
+
+# n = int(input())
+# wynik = 0
+
+# def silnia(n):
+#     wynik = 1
+#     while n > 0:
+#         wynik = wynik * n
+#         n -= 1
+#     return wynik
+
+# for i in range(n):
+#     wynik = wynik + silnia(n)
+#     n -= 1
 # print(wynik)
