@@ -133,18 +133,43 @@
 
 # zad 10
 
-
 # n = int(input())
 # wynik = 0
-
+#
 # def silnia(n):
 #     wynik = 1
 #     while n > 0:
 #         wynik = wynik * n
 #         n -= 1
 #     return wynik
-
+#
 # for i in range(n):
 #     wynik = wynik + silnia(n)
 #     n -= 1
 # print(wynik)
+
+
+# zad 11
+
+
+# def nww(a, b):
+#     iloczyn = a * b
+#     while a != b:
+#         if a > b:
+#             a = a - b
+#         if b > a:
+#             b = b - a
+#     nwd = a
+#     return iloczyn // nwd
+#
+#
+# def dod_ulam(a, b, x, y):
+#     e = (nww(b, y) // b) * a
+#     f = (nww(b, y) // y) * x
+#     g = e + f
+#     return f"{g}/{nww(b,y)}"
+#
+# a, b = map(int, input().split("/"))
+# c, d = map(int, input().split("/"))
+# print(dod_ulam(a,b,c,d))
+
