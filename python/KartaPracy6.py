@@ -90,7 +90,7 @@
 
 # n = int(input())
 # suma = 0
-# 
+#
 # for i in range(999,99,-1):
 #     if i % 37 == 0:
 #         suma += i
@@ -100,3 +100,34 @@
 #     else:
 #         continue
 # print(suma)
+
+
+# zad 8
+
+
+# n = int(input())
+# suma = 0
+# znak = 3
+# a = 2
+# for i in range(n):
+#     suma += a * znak
+#     a += 1
+#     znak = znak * -1
+# print(suma)
+
+
+
+# zad 9
+
+
+
+# n = int(input())
+# wynik = 1
+# a = 1
+# b = 0
+# znak = 1
+# for i in range(n):
+#     wynik = wynik * ((a * -2) * znak)
+#     a = (a * -2) * znak
+#     znak = znak * -1
+# print(wynik)
