@@ -82,4 +82,21 @@
 #         n -= 1
 #     if n == 0:
 #         break
+#     else:
+#         continue
+# print(suma)
+
+# zad 7
+
+# n = int(input())
+# suma = 0
+# 
+# for i in range(999,99,-1):
+#     if i % 37 == 0:
+#         suma += i
+#         n -= 1
+#     if n == 0:
+#         break
+#     else:
+#         continue
 # print(suma)
