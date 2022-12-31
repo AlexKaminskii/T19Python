@@ -1,10 +1,3 @@
-# def nwd(a, b):
-#     while b > 0:
-#         a, b = b, a % b
-#     return a
-
-
-
 # zad 1
 
 # a = int(input())
@@ -56,8 +49,37 @@
 # zad 4
 
 
+
 # suma = 0
 # for i in range(10,100):
 #     if i % 10 <= (i // 10) * 2:
 #         suma += 1
+# print(suma)
+
+
+# zad 5
+
+
+# suma = 0
+# ilosc = 0
+#
+# for i in range(100,1000):
+#     if i//100 > (1%10) + (1//10)%10:
+#         suma += i
+#         ilosc += 1
+# print("Suma: ", suma)
+# print("Ilość: ", ilosc)
+
+
+# zad 6
+
+
+# n = int(input())
+# suma = 0
+# for i in range(10, 100):
+#     if i % 19 == 0:
+#         suma += i
+#         n -= 1
+#     if n == 0:
+#         break
 # print(suma)
