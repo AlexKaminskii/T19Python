@@ -180,36 +180,53 @@
 
 
 
-def nww(a, b):
-    iloczyn = a * b
-    while a != b:
-        if a > b:
-            a = a - b
-        if b > a:
-            b = b - a
-    nwd = a
-    return iloczyn // nwd
+# def nww(a, b):
+#     iloczyn = a * b
+#     while a != b:
+#         if a > b:
+#             a = a - b
+#         if b > a:
+#             b = b - a
+#     nwd = a
+#     return iloczyn // nwd
 
 
-n = int(input())
+# n = int(input())
 
-a = 1
-b = 1
+# a = 1
+# b = 1
 
-wynik_gora = 0
-dol_ulamka = 0
-gora_ulamka_jeden = 0
-gora_ulamka_dwa = 0
+# wynik_gora = 0
+# dol_ulamka = 0
+# gora_ulamka_jeden = 0
+# gora_ulamka_dwa = 0
 
-for i in range(n):
-    dol_ulamka = nww((b**2), (b+1)**2)
-    gora_ulamka_jeden = (dol_ulamka // (b**2)) * a
-    gora_ulamka_dwa = (dol_ulamka // (b+1)**2) * (a+2)
+# for i in range(n):
+#     dol_ulamka = nww((b**2), (b+1)**2)
+#     gora_ulamka_jeden = (dol_ulamka // (b**2)) * a
+#     gora_ulamka_dwa = (dol_ulamka // (b+1)**2) * (a+2)
 
-    wynik_gora = gora_ulamka_jeden + gora_ulamka_dwa + wynik_gora * (dol_ulamka // nww(b, b+1))
-    a += 2
-    b += 1
+#     wynik_gora = gora_ulamka_jeden + gora_ulamka_dwa + wynik_gora * (dol_ulamka // nww(b, b+1))
+#     a += 2
+#     b += 1
 
-print(wynik_gora, "/", dol_ulamka)
+# print(wynik_gora, "/", dol_ulamka)
 
 
+# zad 12
+
+
+
+# n = int(input())
+
+# a = 1
+# b = 1
+# suma_gora = 0
+# suma_dol = 0
+
+# for i in range(n):
+#     suma_gora += a
+#     suma_dol += b**2
+#     a += 2
+#     b += 1
+# print(suma_gora, "/", suma_dol)
