@@ -256,3 +256,20 @@
 # for i in range(1, n + 1):
 #     suma = suma + (i*2)/((i**3)+2)
 # print(suma)
+
+
+
+# zad 14
+
+
+# n = int(input())
+# wynik_dol = 1
+# wynik_gora = 0
+# gora = 3
+# 
+# 
+# for i in range(1, n+1):
+#     wynik_gora = gora * (gora + 1)
+#     gora += 1
+#     wynik_dol = (wynik_dol * 2) + 1
+# print(f"{wynik_gora}/{wynik_dol} = {wynik_gora/wynik_dol}")
