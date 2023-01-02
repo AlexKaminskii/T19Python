@@ -149,68 +149,81 @@
 # print(wynik)
 
 
-# zad 11
+
+# zad 11 wspólne mianowniki 1
 
 
-# def nww(a, b):
-#     iloczyn = a * b
-#     while a != b:
-#         if a > b:
-#             a = a - b
-#         if b > a:
-#             b = b - a
-#     nwd = a
-#     return iloczyn // nwd
-#
-#
+
+
 # def dod_ulam(a, b, x, y):
 #     e = (nww(b, y) // b) * a
 #     f = (nww(b, y) // y) * x
 #     g = e + f
 #     return f"{g}/{nww(b,y)}"
 #
-# a, b = map(int, input().split("/"))
-# c, d = map(int, input().split("/"))
-# print(dod_ulam(a,b,c,d))
-
-
-
-# zad 11
-
-
-
 
 # def nww(a, b):
 #     iloczyn = a * b
 #     while a != b:
 #         if a > b:
-#             a = a - b
+#             a -= b
 #         if b > a:
-#             b = b - a
+#             b -= a
 #     nwd = a
 #     return iloczyn // nwd
-
-
+#
+#
 # n = int(input())
-
+#
 # a = 1
 # b = 1
-
+#
 # wynik_gora = 0
 # dol_ulamka = 0
 # gora_ulamka_jeden = 0
 # gora_ulamka_dwa = 0
-
+#
 # for i in range(n):
 #     dol_ulamka = nww((b**2), (b+1)**2)
 #     gora_ulamka_jeden = (dol_ulamka // (b**2)) * a
 #     gora_ulamka_dwa = (dol_ulamka // (b+1)**2) * (a+2)
-
+#
 #     wynik_gora = gora_ulamka_jeden + gora_ulamka_dwa + wynik_gora * (dol_ulamka // nww(b, b+1))
 #     a += 2
 #     b += 1
-
+#
 # print(wynik_gora, "/", dol_ulamka)
+
+
+
+
+# zad 11 wspólne mianowniki 2
+
+
+
+
+# n = int(input())
+# licznik = 0
+# mianownik = 1
+# for i in range(1, n+1):
+#     mianownik = mianownik * i**2
+#
+# for i in range(1, i):
+#     licznik += mianownik * (2*i-1) // (i**2)
+# licznik +=2*n-1
+# print(f"Wynik: {licznik}/{mianownik}")
+
+
+
+# zad 11 bez wspólnych mianowników
+
+
+# n = int(input())
+# suma = 0
+# for i in range(1, n+1):
+#     suma += (2*i-1)/(i*2)
+# print(suma)
+
 
 
 # zad 12
@@ -218,15 +231,28 @@
 
 
 # n = int(input())
-
+#
 # a = 1
 # b = 1
 # suma_gora = 0
 # suma_dol = 0
-
+#
 # for i in range(n):
 #     suma_gora += a
 #     suma_dol += b**2
 #     a += 2
 #     b += 1
 # print(suma_gora, "/", suma_dol)
+
+
+
+
+# zad 13
+
+
+# suma = 0
+# n = int(input())
+#
+# for i in range(1, n + 1):
+#     suma = suma + (i*2)/((i**3)+2)
+# print(suma)
