@@ -65,4 +65,17 @@ def nwd(a, b):
 # n = int(input())
 # for i in range(10,20):
 #     if nwd(n, i) == 1:
-#         print(f"({n},{i})")
+#         print(i)
+
+
+# zad 6
+
+# a, b = map(int, input().split("/"))
+# print(f"{a//nwd(a, b)}/{b//nwd(a, b)}")
+
+
+# zad 7
+
+# a, b = map(int, input().split("/"))
+# c = a // b
+# print(f"{c}  {(a%b)//nwd(a, b)}/{b//nwd(a, b)}")
