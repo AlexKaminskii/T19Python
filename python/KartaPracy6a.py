@@ -79,3 +79,18 @@ def nwd(a, b):
 # a, b = map(int, input().split("/"))
 # c = a // b
 # print(f"{c}  {(a%b)//nwd(a, b)}/{b//nwd(a, b)}")
+
+# zad 8
+
+# def suma_dz(n):
+#     suma = 0
+#     for i in range(1, n):
+#         if n % i == 0:
+#             suma += i
+#     return suma
+#
+# for i in range(1, 10000):
+#     a = suma_dz(i)
+#     if i == suma_dz(a) and i != a:
+#         print(i, a, "to liczby zaprzyjaźnione")
+
