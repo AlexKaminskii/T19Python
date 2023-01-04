@@ -20,9 +20,12 @@ def nwd(a, b):
         a, b = b, a%b
     return a
 #nww
-    
-
-
-
-
-
+def nww(a, b):
+    iloczyn = a * b
+    while a != b:
+        if a > b:
+            a -= b
+        if b > a:
+            b -= a
+    nwd = a
+    return iloczyn // nwd
