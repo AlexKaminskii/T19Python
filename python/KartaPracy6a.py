@@ -11,19 +11,19 @@
 # zad 2
 
 
-# import math
+
 # n = int(input())
-#
-# def pierwsza(n):
-#   if n < 2:
-#     return False
-#   elif n == 2:
-#     return True
-#   for i in range(2, int(math.sqrt(n)) + 1):
-#     if n % i == 0:
-#       return False
-#   return True
-#
+import math
+def pierwsza(n):
+  if n < 2:
+    return False
+  elif n == 2:
+    return True
+  for i in range(2, int(math.sqrt(n)) + 1):
+    if n % i == 0:
+      return False
+  return True
+
 # print(pierwsza(n))
 
 
@@ -94,3 +94,14 @@ def nwd(a, b):
 #     if i == suma_dz(a) and i != a:
 #         print(i, a, "to liczby zaprzyjaźnione")
 
+
+
+# zad 9
+
+
+
+# for i in range(10,100):
+#     if pierwsza(i):
+#         for j in range(10,100):
+#             if pierwsza(j):
+#                 print(f"{i}*{j} = {i*j}")
