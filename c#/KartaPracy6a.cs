@@ -206,7 +206,7 @@ int pierwsza(int n)
     }
     return 1;
 }
-
+/*
 for (int i = 10; i < 100; i++)
 {
     if (pierwsza(i) == 1)
@@ -219,4 +219,26 @@ for (int i = 10; i < 100; i++)
             }
         }
     }
+}*/
+
+
+
+
+
+
+// zad 10
+
+
+
+/*
+int n = int.Parse(Console.ReadLine());
+
+if (pierwsza(n) == 1 && pierwsza(n + 2) == 1)
+{
+    Console.WriteLine($"Tak, liczba {n} ma bliźniaczą liczbę {n+2}");
 }
+else
+{
+    Console.WriteLine("Nie, a liczb anie ma bliźniaka lub nie jest pierwsza");
+}
+*/
