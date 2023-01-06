@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using System.Runtime.InteropServices;
 
 // zad 1
@@ -120,7 +121,7 @@ for (int i = 10; i < 20; i++)
 
 // zad 6
 
-Console.Write("Podaj licznik: ");
+/*Console.Write("Podaj licznik: ");
 int a = int.Parse(Console.ReadLine());
 Console.Write("Podaj mianownik: ");
 int b = int.Parse(Console.ReadLine());
@@ -128,4 +129,52 @@ int b = int.Parse(Console.ReadLine());
 a = a / NWD(a, b);
 b = b / NWD(a, b);
 
-Console.WriteLine($"Skrócony ułamek: {a}/{b}");
+Console.WriteLine($"Skrócony ułamek: {a}/{b}");*/
+
+
+// zad 7
+
+
+/*Console.Write("Podaj licznik: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Podaj mianownik: ");
+int b = int.Parse(Console.ReadLine());
+
+int c = a / b;
+Console.WriteLine($"{c}  {(a%b)/NWD(a, b)}/{b/NWD(a, b)}");*/
+
+
+
+//zad 8
+
+
+
+/*
+for (int i = 2; i < 10000; i++)
+{
+    int a = 0;
+    
+    for (int j = 1; j < i; j++)
+    {
+        if (i%j==0)
+        {
+            a += j;
+        }
+    }
+
+    int b = 0;
+    
+    for (int j = 1; j < a; j++)
+    {
+        if (a % j == 0)
+        {
+            b += j;
+        }
+    }
+
+    if (i == b && i != a)
+    {
+        Console.WriteLine($"{i} i {a} są liczbami zaprzyjaźnionymi");
+    }
+}
+*/
