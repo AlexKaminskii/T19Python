@@ -178,3 +178,45 @@ for (int i = 2; i < 10000; i++)
     }
 }
 */
+
+
+
+
+// zad 9
+
+
+
+int pierwsza(int n)
+{
+    if (n < 2)
+    {
+        return 0;
+    }
+    else if (n == 2)
+    {
+        return 1;
+    }
+
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+for (int i = 10; i < 100; i++)
+{
+    if (pierwsza(i) == 1)
+    {
+        for (int j = 10; j < 100; j++)
+        {
+            if (pierwsza(j) == 1)
+            {
+                Console.WriteLine($"{i*j} = {i}*{j}");
+            }
+        }
+    }
+}
