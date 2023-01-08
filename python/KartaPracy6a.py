@@ -11,21 +11,20 @@
 # zad 2
 
 
-
-
-import math
-def pierwsza(n):
-  if n < 2:
-    return False
-  elif n == 2:
-    return True
-  for i in range(2, n):
-    if n % i == 0:
-      return False
-  return True
-
-n = int(input())
-print(pierwsza(n))
+#
+#
+# def pierwsza(n):
+#   if n < 2:
+#     return False
+#   elif n == 2:
+#     return True
+#   for i in range(2, n):
+#     if n % i == 0:
+#       return False
+#   return True
+#
+# n = int(input())
+# print(pierwsza(n))
 
 
 
@@ -82,25 +81,22 @@ def nwd(a, b):
 # print(f"{c}  {(a%b)//nwd(a, b)}/{b//nwd(a, b)}")
 
 # zad 8
-a, b = 0, 0
-
-for i in range(1, 10000):
-
-    for j in range(1, 10000):
-        if i % j == 0 and i != j:
-            a += j
-        elif j % i == 0 and i != j:
-            b += i
-    if a == i and b == j:
-        print(a,"i", b, "są zaprzyjaźnione")
-print("koniec")
 
 
 
+# for i in range(1, 10000):
+#     a = 0
+#     for j in range(1, i):
+#         if i % j == 0:
+#             a += j
+#     b = 0
+#     for j in range(1, a):
+#         if a % j == 0:
+#             b += j
+#     if i == b and i != a:
+#         print(f"{i} i {a} są liczbami zaprzyjaźnionymi")
+# exit(2137)
 
-    # a = suma_dz(i)
-    # if i == suma_dz(a) and i != a:
-    #     print(i, a, "to liczby zaprzyjaźnione")
 
 
 
